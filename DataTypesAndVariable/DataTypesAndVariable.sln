@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. CenturiesToMinutes", "1.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. CircleArea12digitsPrecision", "2. CircleArea12digitsPrecision\2. CircleArea12digitsPrecision.csproj", "{15AAE13B-81B1-4324-8A6E-1F9A05DF0894}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. ExactSumOfRealNumbers", "3. ExactSumOfRealNumbers\3. ExactSumOfRealNumbers.csproj", "{FE9F6D33-A996-4FD3-9E48-8A2973CD0632}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Elevator", "4. Elevator\4. Elevator.csproj", "{34F07189-F9F4-4BB3-B454-C226AECB245A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{15AAE13B-81B1-4324-8A6E-1F9A05DF0894}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15AAE13B-81B1-4324-8A6E-1F9A05DF0894}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15AAE13B-81B1-4324-8A6E-1F9A05DF0894}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE9F6D33-A996-4FD3-9E48-8A2973CD0632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE9F6D33-A996-4FD3-9E48-8A2973CD0632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE9F6D33-A996-4FD3-9E48-8A2973CD0632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE9F6D33-A996-4FD3-9E48-8A2973CD0632}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34F07189-F9F4-4BB3-B454-C226AECB245A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34F07189-F9F4-4BB3-B454-C226AECB245A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34F07189-F9F4-4BB3-B454-C226AECB245A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34F07189-F9F4-4BB3-B454-C226AECB245A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
