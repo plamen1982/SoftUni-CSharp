@@ -11,14 +11,11 @@ namespace RefactorSpecialNumber
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-            int sum;
-            int currentIndex;
-            bool result = false;
 
             for (int i = 1; i < n; i++)
             {
-                sum = 0;
-                currentIndex = i;
+                int sum = 0;
+                int currentIndex = i;
 
                 while (currentIndex > 0)
                 {
@@ -26,10 +23,11 @@ namespace RefactorSpecialNumber
                     currentIndex = currentIndex / 10;
                 }
 
-                result = (sum == 5) || (sum == 7) || (sum == 11);
+                bool result = (sum == 5) || (sum == 7) || (sum == 11);
 
                 Console.WriteLine($"{i} -> {result}");
-                
+
+
             }
         }
     }
