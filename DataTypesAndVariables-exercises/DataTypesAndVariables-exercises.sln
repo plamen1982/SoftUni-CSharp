@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.StringAndObject", "6.Stri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.EmployeeData", "8.EmployeeData\8.EmployeeData.csproj", "{8423DDB0-4195-4DA0-9DD8-7D9C7D16FE34}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. ConvertSpeedUnits", "11. ConvertSpeedUnits\11. ConvertSpeedUnits.csproj", "{DD80DFDA-B855-41FD-BCAD-E515D84B9D84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{8423DDB0-4195-4DA0-9DD8-7D9C7D16FE34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8423DDB0-4195-4DA0-9DD8-7D9C7D16FE34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8423DDB0-4195-4DA0-9DD8-7D9C7D16FE34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD80DFDA-B855-41FD-BCAD-E515D84B9D84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD80DFDA-B855-41FD-BCAD-E515D84B9D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD80DFDA-B855-41FD-BCAD-E515D84B9D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD80DFDA-B855-41FD-BCAD-E515D84B9D84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
