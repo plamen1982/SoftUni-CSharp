@@ -10,6 +10,17 @@ namespace _5.BooleanVariable
     {
         static void Main(string[] args)
         {
+            string booleanString = Console.ReadLine();
+            bool trueOrFalse = Convert.ToBoolean(booleanString);
+            if (trueOrFalse)
+            {
+                Console.WriteLine("Yes");
+            }
+            else
+            {
+                Console.WriteLine("No");
+            }
+
         }
     }
 }

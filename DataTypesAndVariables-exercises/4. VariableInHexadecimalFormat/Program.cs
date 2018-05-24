@@ -13,7 +13,6 @@ namespace _4.VariableInHexadecimalFormat
             string input = Console.ReadLine();
 
             int output = Convert.ToInt32(input, 16);
-
             Console.WriteLine(output);
         }
     }

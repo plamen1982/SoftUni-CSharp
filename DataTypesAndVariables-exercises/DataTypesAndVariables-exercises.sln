@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "18.DifferentIntegerSize", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. PracticeFloatingPointNumbers", "2. PracticeFloatingPointNumbers\2. PracticeFloatingPointNumbers.csproj", "{052B21E9-EA65-4000-BCEA-E1A5219DADFB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.PracticeCharactersAndStrings", "3.PracticeCharactersAndStrings\3.PracticeCharactersAndStrings.csproj", "{98A2BD8B-7035-42DF-8671-D83C73C20C33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{052B21E9-EA65-4000-BCEA-E1A5219DADFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{052B21E9-EA65-4000-BCEA-E1A5219DADFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{052B21E9-EA65-4000-BCEA-E1A5219DADFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98A2BD8B-7035-42DF-8671-D83C73C20C33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98A2BD8B-7035-42DF-8671-D83C73C20C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98A2BD8B-7035-42DF-8671-D83C73C20C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98A2BD8B-7035-42DF-8671-D83C73C20C33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
