@@ -27,11 +27,6 @@ namespace _11._ConvertSpeedUnits
             Console.WriteLine(kilometersPerHour);
             Console.WriteLine(milesPerHour);
 
-            /*
-             * int milesPerHour 
-            int seconds */
-
-
 
         }
     }
