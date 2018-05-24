@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. PracticeFloatingPointNum
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.PracticeCharactersAndStrings", "3.PracticeCharactersAndStrings\3.PracticeCharactersAndStrings.csproj", "{98A2BD8B-7035-42DF-8671-D83C73C20C33}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.StringAndObject", "6.StringAndObject\6.StringAndObject.csproj", "{72AAEA39-8A4F-43C7-8606-1C1610CF0BBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.EmployeeData", "8.EmployeeData\8.EmployeeData.csproj", "{8423DDB0-4195-4DA0-9DD8-7D9C7D16FE34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{98A2BD8B-7035-42DF-8671-D83C73C20C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98A2BD8B-7035-42DF-8671-D83C73C20C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98A2BD8B-7035-42DF-8671-D83C73C20C33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72AAEA39-8A4F-43C7-8606-1C1610CF0BBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72AAEA39-8A4F-43C7-8606-1C1610CF0BBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72AAEA39-8A4F-43C7-8606-1C1610CF0BBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72AAEA39-8A4F-43C7-8606-1C1610CF0BBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8423DDB0-4195-4DA0-9DD8-7D9C7D16FE34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8423DDB0-4195-4DA0-9DD8-7D9C7D16FE34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8423DDB0-4195-4DA0-9DD8-7D9C7D16FE34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8423DDB0-4195-4DA0-9DD8-7D9C7D16FE34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

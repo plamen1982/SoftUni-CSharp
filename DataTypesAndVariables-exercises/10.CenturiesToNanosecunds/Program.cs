@@ -9,18 +9,19 @@ namespace _10.CenturiesToNanosecunds
 {
     class Program
     {
-        public static object BigInteger { get; private set; }
 
         static void Main(string[] args)
         {
             byte centuries = byte.Parse(Console.ReadLine());
             ushort years = (ushort)(centuries * 100);
             int days = (int)(years * 365.2422);
-            int hours = (int)(days * 24);
-            int minutes = (int)(hours * 60);
+            long hours = (long)days * 24;
+            long minutes = hours * 60;
             long seconds = minutes * 60;
-            long millisecond = seconds * 1000;
-
+            long milliseconds = seconds * 1000;
+            long microseconds = milliseconds * 1000;
+            BigInteger nanoSeconds = (BigInteger)microseconds * 1000;
+            Console.WriteLine($"{centuries} centuries = {years} years = {days} days = {hours} hours = {minutes} minutes = {seconds} seconds = {milliseconds} milliseconds = {microseconds} microseconds = {nanoSeconds} nanoseconds");
         }
     }
 }
