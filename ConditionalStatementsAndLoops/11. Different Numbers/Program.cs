@@ -9,14 +9,15 @@ namespace _11._Different_Numbers
             int a = int.Parse(Console.ReadLine());
             int b = int.Parse(Console.ReadLine());
 
-            if (Math.Abs(a - b) < 5)
+            int max = Math.Max(a, b);
+            int min = Math.Min(a, b);
+            if ((max - min) < 5)
             {
                 Console.WriteLine("No");
                 return;
             }
 
             for (int n1 = a; n1 <= b; n1++)
-
             {
                 for (int n2 = a; n2 <= b; n2++)
                 {
@@ -33,9 +34,9 @@ namespace _11._Different_Numbers
                             }
                         }
                     }
-
                 }
             }
+          
         }
     }
 }

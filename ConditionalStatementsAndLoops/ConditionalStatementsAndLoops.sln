@@ -3,31 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChooseADrink", "ChooseADrink\ChooseADrink.csproj", "{3ED03184-BE96-4631-99A8-A869CD514AE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChooseADrink", "ChooseADrink\ChooseADrink.csproj", "{3ED03184-BE96-4631-99A8-A869CD514AE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChooseADrink2", "ChooseADrink2\ChooseADrink2.csproj", "{562D1E17-5216-4E56-8E54-1AEFB49C33A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChooseADrink2", "ChooseADrink2\ChooseADrink2.csproj", "{562D1E17-5216-4E56-8E54-1AEFB49C33A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantDiscount", "RestaurantDiscount\RestaurantDiscount.csproj", "{159DBC82-9356-4DF1-A4B1-F0C93BF7C699}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantDiscount", "RestaurantDiscount\RestaurantDiscount.csproj", "{159DBC82-9356-4DF1-A4B1-F0C93BF7C699}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Hotel", "4. Hotel\4. Hotel.csproj", "{6ECB7DBF-8E25-4E52-B577-2776216DFB54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4. Hotel", "4. Hotel\4. Hotel.csproj", "{6ECB7DBF-8E25-4E52-B577-2776216DFB54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. WordInPlural", "5. WordInPlural\5. WordInPlural.csproj", "{A10393A6-33FB-4601-8990-257BE8121B8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5. WordInPlural", "5. WordInPlural\5. WordInPlural.csproj", "{A10393A6-33FB-4601-8990-257BE8121B8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. IntervalOfNumbers", "6. IntervalOfNumbers\6. IntervalOfNumbers.csproj", "{B6B79F55-CFD2-4C97-BEFD-676BC496A94E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6. IntervalOfNumbers", "6. IntervalOfNumbers\6. IntervalOfNumbers.csproj", "{B6B79F55-CFD2-4C97-BEFD-676BC496A94E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. CakeIngredients", "7. CakeIngredients\7. CakeIngredients.csproj", "{32E04CCE-7598-4355-A874-4F37C8C1A501}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7. CakeIngredients", "7. CakeIngredients\7. CakeIngredients.csproj", "{32E04CCE-7598-4355-A874-4F37C8C1A501}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8. CaloriesCounter", "8. CaloriesCounter\8. CaloriesCounter.csproj", "{1850F391-5CBE-47B6-A7A4-40F68EB893C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8. CaloriesCounter", "8. CaloriesCounter\8. CaloriesCounter.csproj", "{1850F391-5CBE-47B6-A7A4-40F68EB893C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9. Count the Integers", "9. Count the Integers\9. Count the Integers.csproj", "{B44AD144-CA20-4381-9BD7-201B67B781B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "9. Count the Integers", "9. Count the Integers\9. Count the Integers.csproj", "{B44AD144-CA20-4381-9BD7-201B67B781B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. TriangleOfNumbers", "10. TriangleOfNumbers\10. TriangleOfNumbers.csproj", "{8C49EA56-F7D1-442F-8942-78AA435DE00E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10. TriangleOfNumbers", "10. TriangleOfNumbers\10. TriangleOfNumbers.csproj", "{8C49EA56-F7D1-442F-8942-78AA435DE00E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. Different Numbers", "11. Different Numbers\11. Different Numbers.csproj", "{27887279-294A-4B78-857B-FA4E47047D3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11. Different Numbers", "11. Different Numbers\11. Different Numbers.csproj", "{27887279-294A-4B78-857B-FA4E47047D3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNumbers", "TestNumbers\TestNumbers.csproj", "{9D2054BC-EC45-4A38-B17B-DEAFDFB85263}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestNumbers", "TestNumbers\TestNumbers.csproj", "{9D2054BC-EC45-4A38-B17B-DEAFDFB85263}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. GameOfNumbers", "13. GameOfNumbers\13. GameOfNumbers.csproj", "{D9CE4721-D4FB-43D4-95EA-B38F0FF8B93A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13. GameOfNumbers", "13. GameOfNumbers\13. GameOfNumbers.csproj", "{D9CE4721-D4FB-43D4-95EA-B38F0FF8B93A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.TestNumbers", "12.TestNumbers\12.TestNumbers.csproj", "{43E8D95C-4487-41C6-9AB2-CCEB524FD950}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{D9CE4721-D4FB-43D4-95EA-B38F0FF8B93A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9CE4721-D4FB-43D4-95EA-B38F0FF8B93A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9CE4721-D4FB-43D4-95EA-B38F0FF8B93A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43E8D95C-4487-41C6-9AB2-CCEB524FD950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E8D95C-4487-41C6-9AB2-CCEB524FD950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43E8D95C-4487-41C6-9AB2-CCEB524FD950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43E8D95C-4487-41C6-9AB2-CCEB524FD950}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
