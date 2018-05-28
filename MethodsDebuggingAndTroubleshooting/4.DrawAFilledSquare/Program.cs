@@ -24,6 +24,18 @@ namespace _4.DrawAFilledSquare
 
             Console.WriteLine(new string('-', 2 * n));
         }
+
+        static string newString(string symbol, int count)
+        {
+            string result = "";
+
+            for (int i = 0; i < count; i++)
+            {
+                result += symbol; 
+            }
+            return result;
+        }
+
         static void Main(string[] args)
         {
             DrawAFilledSquare(int.Parse(Console.ReadLine()));
