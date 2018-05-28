@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.RectanbleProperties", "1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.FastPrimeChecker", "15.FastPrimeChecker\15.FastPrimeChecker.csproj", "{8BFDD118-20FC-424B-BE76-B79EC2A1A9EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19.TheaThePhotographer", "19.TheaThePhotographer\19.TheaThePhotographer.csproj", "{33719601-5DD8-446C-872E-A22C9D2AB8E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{8BFDD118-20FC-424B-BE76-B79EC2A1A9EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BFDD118-20FC-424B-BE76-B79EC2A1A9EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BFDD118-20FC-424B-BE76-B79EC2A1A9EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33719601-5DD8-446C-872E-A22C9D2AB8E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33719601-5DD8-446C-872E-A22C9D2AB8E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33719601-5DD8-446C-872E-A22C9D2AB8E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33719601-5DD8-446C-872E-A22C9D2AB8E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
