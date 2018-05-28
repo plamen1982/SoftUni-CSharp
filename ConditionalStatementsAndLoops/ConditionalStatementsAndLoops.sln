@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestNumbers", "TestNumbers\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13. GameOfNumbers", "13. GameOfNumbers\13. GameOfNumbers.csproj", "{D9CE4721-D4FB-43D4-95EA-B38F0FF8B93A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.TestNumbers", "12.TestNumbers\12.TestNumbers.csproj", "{43E8D95C-4487-41C6-9AB2-CCEB524FD950}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12.TestNumbers", "12.TestNumbers\12.TestNumbers.csproj", "{43E8D95C-4487-41C6-9AB2-CCEB524FD950}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.MagicLetter", "14.MagicLetter\14.MagicLetter.csproj", "{413D52DA-BAE8-4830-83CF-4E63C573D754}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{43E8D95C-4487-41C6-9AB2-CCEB524FD950}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43E8D95C-4487-41C6-9AB2-CCEB524FD950}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43E8D95C-4487-41C6-9AB2-CCEB524FD950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{413D52DA-BAE8-4830-83CF-4E63C573D754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{413D52DA-BAE8-4830-83CF-4E63C573D754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{413D52DA-BAE8-4830-83CF-4E63C573D754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{413D52DA-BAE8-4830-83CF-4E63C573D754}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
