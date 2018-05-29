@@ -10,11 +10,7 @@ namespace _4.DrawAFilledSquare
             
             for (int i = 0; i < n - 2; i++)
             {
-                Console.Write('-');
-                Console.Write(newString("\\/", n - 1));
-                Console.Write('-');
-                Console.WriteLine();
-
+                Console.WriteLine($"-{newString("\\/", n - 1)}-");
             }
 
             Console.WriteLine(new string('-', 2 * n));
