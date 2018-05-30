@@ -7,7 +7,16 @@ namespace _5.FibonacciNumbers
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-            Console.WriteLine(FibonacciNumbers(n));
+          /*  
+           *  if (n == 0)
+            {
+                Console.WriteLine(0);
+            }
+            */
+
+
+         Console.WriteLine(FibonacciNumbers(n));
+
         }
         static long FibonacciNumbers(int n)
         {
