@@ -31,7 +31,6 @@ namespace _9.LongerLine
                 if (Math.Abs(x1) + Math.Abs(y1) > Math.Abs(x2) + Math.Abs(y2))
                 {
                     Console.WriteLine($"({x2}, {y2})({x1}, {y1})");
-
                 }
                 else
                 {
