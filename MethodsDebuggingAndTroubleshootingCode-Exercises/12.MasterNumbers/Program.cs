@@ -53,8 +53,8 @@ namespace _12.MasterNumbers
                 }
             }
 
-
             return leftSide.Equals(rightSide);
+
             }
 
         static bool isSumDivisibleBySeven(long number)
