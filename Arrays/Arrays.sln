@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.DayOfWeek", "1.DayOfWeek\1.DayOfWeek.csproj", "{AF359F81-E90A-48B7-8F0A-5BB56A2B2FB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.ReverseАnArrayОfIntegers", "2.ReverseАnArrayОfIntegers\2.ReverseАnArrayОfIntegers.csproj", "{76DA5310-69DB-4DCC-9092-00ADF8D8153E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AF359F81-E90A-48B7-8F0A-5BB56A2B2FB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF359F81-E90A-48B7-8F0A-5BB56A2B2FB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF359F81-E90A-48B7-8F0A-5BB56A2B2FB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76DA5310-69DB-4DCC-9092-00ADF8D8153E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76DA5310-69DB-4DCC-9092-00ADF8D8153E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76DA5310-69DB-4DCC-9092-00ADF8D8153E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76DA5310-69DB-4DCC-9092-00ADF8D8153E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
