@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.MasterNumbers", "12.Mast
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.Factorial", "13.Factorial\13.Factorial.csproj", "{F9004511-02ED-43BA-A9D5-4BE460ED7A1E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.FactorialTrailingZeroes", "14.FactorialTrailingZeroes\14.FactorialTrailingZeroes.csproj", "{A945CB61-8762-45FB-8CB5-F08FA32F1EAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{F9004511-02ED-43BA-A9D5-4BE460ED7A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9004511-02ED-43BA-A9D5-4BE460ED7A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9004511-02ED-43BA-A9D5-4BE460ED7A1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A945CB61-8762-45FB-8CB5-F08FA32F1EAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A945CB61-8762-45FB-8CB5-F08FA32F1EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A945CB61-8762-45FB-8CB5-F08FA32F1EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A945CB61-8762-45FB-8CB5-F08FA32F1EAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
