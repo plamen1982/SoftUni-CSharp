@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.DayOfWeek", "1.DayOfWeek\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.ReverseАnArrayОfIntegers", "2.ReverseАnArrayОfIntegers\2.ReverseАnArrayОfIntegers.csproj", "{76DA5310-69DB-4DCC-9092-00ADF8D8153E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.LastKNumbersSumsSequence", "3.LastKNumbersSumsSequence\3.LastKNumbersSumsSequence.csproj", "{086CBEDE-CE25-42F3-919C-F6CBB70FF1BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{76DA5310-69DB-4DCC-9092-00ADF8D8153E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76DA5310-69DB-4DCC-9092-00ADF8D8153E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76DA5310-69DB-4DCC-9092-00ADF8D8153E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{086CBEDE-CE25-42F3-919C-F6CBB70FF1BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{086CBEDE-CE25-42F3-919C-F6CBB70FF1BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{086CBEDE-CE25-42F3-919C-F6CBB70FF1BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{086CBEDE-CE25-42F3-919C-F6CBB70FF1BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
