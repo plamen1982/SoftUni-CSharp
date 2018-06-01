@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.ReverseАnArrayОfInteger
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.LastKNumbersSumsSequence", "3.LastKNumbersSumsSequence\3.LastKNumbersSumsSequence.csproj", "{086CBEDE-CE25-42F3-919C-F6CBB70FF1BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.TripleSum", "4.TripleSum\4.TripleSum.csproj", "{0EFEF5A4-AD39-4A94-9DDA-D538495081EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{086CBEDE-CE25-42F3-919C-F6CBB70FF1BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{086CBEDE-CE25-42F3-919C-F6CBB70FF1BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{086CBEDE-CE25-42F3-919C-F6CBB70FF1BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EFEF5A4-AD39-4A94-9DDA-D538495081EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EFEF5A4-AD39-4A94-9DDA-D538495081EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EFEF5A4-AD39-4A94-9DDA-D538495081EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EFEF5A4-AD39-4A94-9DDA-D538495081EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,8 +5,11 @@ namespace _3.LastKNumbersSumsSequence
     class Program
     {
         static void Main(string[] args)
-        {
 
+        {
+            /* First Solution
+             * 
+             * 
             long lengthOfArray = long.Parse(Console.ReadLine());
             long kLimit = long.Parse(Console.ReadLine());
 
@@ -54,7 +57,34 @@ namespace _3.LastKNumbersSumsSequence
 
             array[startIndex + kLimit] = sum;
             return array;
+            */
 
+            /*Second Solution
+                */
+            
+        int n = int.Parse(Console.ReadLine());
+        int k = int.Parse(Console.ReadLine());
+        long[] arr = new long[n];
+        arr[0] = 1;
+        for (int i = 1; i < arr.Length; i++)
+            {
+                int start = Math.Max(0, i - k);
+                int end = i - 1;
+                long sum = 0;
+                for (int j = start; j <= end; j++)
+                {
+                    sum += arr[j];
+                }
+                arr[i] = sum;
+            }
+        for (int i = 0; i < arr.Length; i++)
+        {
+            Console.WriteLine(arr[i] + " ");
+        }
+            Console.WriteLine();
         }
     }
 }
+
+
+
