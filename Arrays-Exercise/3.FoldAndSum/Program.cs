@@ -32,7 +32,7 @@ namespace _3.FoldAndSum
             {
                 sum[m] = upperArray[m] + lowerArray[m];
             }
-            Console.WriteLine( string.Join(" ", sum));
+            Console.WriteLine(string.Join(" ", sum));
         }
     }
 }
