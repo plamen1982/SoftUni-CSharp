@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.MaxSequenceOfEqualElement
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.MaxSequenceOfIncresingElements", "7.MaxSequenceOfIncresingElements\7.MaxSequenceOfIncresingElements.csproj", "{A7666426-5B53-46DC-B643-F4DD04CF64D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.MostFrequentNumber", "8.MostFrequentNumber\8.MostFrequentNumber.csproj", "{1281228D-6E29-434D-8E80-23BE9184BB9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{A7666426-5B53-46DC-B643-F4DD04CF64D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7666426-5B53-46DC-B643-F4DD04CF64D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7666426-5B53-46DC-B643-F4DD04CF64D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1281228D-6E29-434D-8E80-23BE9184BB9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1281228D-6E29-434D-8E80-23BE9184BB9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1281228D-6E29-434D-8E80-23BE9184BB9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1281228D-6E29-434D-8E80-23BE9184BB9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
