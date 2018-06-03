@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.MostFrequentNumber", "8.M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.IndexOfLetters", "9.IndexOfLetters\9.IndexOfLetters.csproj", "{B60EA726-1AC3-43D7-9228-313BCA0F41F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.PairsOfDifference", "10.PairsOfDifference\10.PairsOfDifference.csproj", "{BD7C4B85-97B7-471D-A699-67D8B9A39774}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{B60EA726-1AC3-43D7-9228-313BCA0F41F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B60EA726-1AC3-43D7-9228-313BCA0F41F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B60EA726-1AC3-43D7-9228-313BCA0F41F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD7C4B85-97B7-471D-A699-67D8B9A39774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD7C4B85-97B7-471D-A699-67D8B9A39774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD7C4B85-97B7-471D-A699-67D8B9A39774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD7C4B85-97B7-471D-A699-67D8B9A39774}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
