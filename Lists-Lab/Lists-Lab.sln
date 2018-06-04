@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.RemoveNegativesAndReverse", "1.RemoveNegativesAndReverse\1.RemoveNegativesAndReverse.csproj", "{D5C0A922-09DE-4892-8F72-F3D9CD6504FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.AppendLists", "2.AppendLists\2.AppendLists.csproj", "{05664C97-502B-4529-B1AD-19BE32729C30}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D5C0A922-09DE-4892-8F72-F3D9CD6504FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5C0A922-09DE-4892-8F72-F3D9CD6504FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5C0A922-09DE-4892-8F72-F3D9CD6504FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05664C97-502B-4529-B1AD-19BE32729C30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05664C97-502B-4529-B1AD-19BE32729C30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05664C97-502B-4529-B1AD-19BE32729C30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05664C97-502B-4529-B1AD-19BE32729C30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
