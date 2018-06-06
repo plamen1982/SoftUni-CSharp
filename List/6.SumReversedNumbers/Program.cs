@@ -8,59 +8,20 @@ namespace _6.SumReversedNumbers
     {
         static void Main(string[] args)
         {
-            string[] input = { "Brachiosaurus",
-                           "Amargasaurus",
-                           "Mamenchisaurus" };
-
-            List<string> dinosaurs = new List<string>(input);
-
-            Console.WriteLine("\nCapacity: {0}", dinosaurs.Capacity);
-
-            Console.WriteLine();
-            foreach (string dinosaur in dinosaurs)
+            string[] inputNumbers = Console.ReadLine().Split(" ");
+            long sum = 0;
+            for (int i = 0; i < inputNumbers.Length; i++)
             {
-                Console.WriteLine(dinosaur);
+                string output = "";
+                for (int j = inputNumbers[i].Length - 1; j >= 0 ; j--)
+                {
+                     output += "" + inputNumbers[i][j];
+                }
+
+                sum += int.Parse(output);
             }
 
-            Console.WriteLine("\nAddRange(dinosaurs)");
-            dinosaurs.AddRange(dinosaurs);
-
-            Console.WriteLine();
-            foreach (string dinosaur in dinosaurs)
-            {
-                Console.WriteLine(dinosaur);
-            }
-
-            Console.WriteLine("\nRemoveRange(2, 2)");
-            dinosaurs.RemoveRange(2, 2);
-
-            Console.WriteLine();
-            foreach (string dinosaur in dinosaurs)
-            {
-                Console.WriteLine(dinosaur);
-            }
-
-            input = new string[] { "Tyrannosaurus",
-                               "Deinonychus",
-                               "Velociraptor"};
-
-            Console.WriteLine("\nInsertRange(3, input)");
-            dinosaurs.InsertRange(3, input);
-
-            Console.WriteLine();
-            foreach (string dinosaur in dinosaurs)
-            {
-                Console.WriteLine(dinosaur);
-            }
-
-            Console.WriteLine("\noutput = dinosaurs.GetRange(2, 3).ToArray()");
-            string[] output = dinosaurs.GetRange(2, 3).ToArray();
-
-            Console.WriteLine();
-            foreach (string dinosaur in output)
-            {
-                Console.WriteLine(dinosaur);
-            }
+            Console.WriteLine(sum);
         }
     }
 }

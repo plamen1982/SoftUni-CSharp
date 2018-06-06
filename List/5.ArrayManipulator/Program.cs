@@ -67,31 +67,26 @@ namespace _5.ArrayManipulator
 
                     if (numbers.Count % 2 == 0)
                     {
-                        for (int i = 0; i < numbers.Count; i += 2)
+                        for (int i = 0; i < numbers.Count; i++)
                         {
-                            summedList.Add(numbers[i] + numbers[i + 1]);
+                            numbers[i] = numbers[i] + numbers[i + 1];
+                            numbers.RemoveAt(i + 1);
                         }
-
                     }
                     else
                     {
-                        for (int i = 0; i < numbers.Count; i += 2)
+                        for (int i = 0; i < numbers.Count; i++)
                         {
                             if (i == numbers.Count - 1)
                             {
-                                summedList.Add(numbers[i]);
                                 break;
-                            }
-                            summedList.Add(numbers[i] + numbers[i + 1]);
+                            } 
+
+                            numbers[i] = numbers[i] + numbers[i + 1];
+                            numbers.RemoveAt(i + 1);
                         }
                     }
 
-                    int diff = numbers.Count - summedList.Count;
-                    numbers.RemoveRange(0, diff);
-                    for (int i = 0; i < numbers.Count; i++)
-                    {
-                        numbers[i] = summedList[i]; 
-                    }
                 }
 
                 //print
@@ -112,28 +107,15 @@ namespace _5.ArrayManipulator
              List<int> shiftList(List<int> list, int numberPositionsToBeShift)
             {
                 List<int> shiftedList = new List<int>(list);
-
+                int firstElement = list[0];
                 for (int i = 0; i < numberPositionsToBeShift; i++)
                 {
-                    int firstNumber = list[0];
-                    int lastNumber = list[list.Count - 1];
+                    list.Add(list[0]);
+                    list.RemoveAt(0);
 
-                    for (int j = 0; j < list.Count; j++)
-                    {
-                        if (j == list.Count - 1)
-                        {
-                            shiftedList[list.Count - 1] = firstNumber;
-                            break;
-                        }
-                        shiftedList[j] = list[j + 1];
-
-                    }
                 }
-                for (int k = 0; k < list.Count; k++)
-                {
-                    list[k] = shiftedList[k];
-                }
-                return list;    
+                list.IndexOf(list.Count - 1, firstElement);
+                return list;
             }
         }
     }
