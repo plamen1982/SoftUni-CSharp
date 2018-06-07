@@ -92,14 +92,7 @@ namespace _5.ArrayManipulator
                 //print
                 else
                 {
-                    Console.Write("[");
-                    for (int i = 0; i < numbers.Count - 1; i++)
-                    {
-                        Console.Write($"{numbers[i]}, ");
-
-                    }
-                    Console.Write($"{numbers[numbers.Count - 1]}]");
-
+                    Console.WriteLine("[" + string.Join(", ", numbers) + "]");
                     break;
                 }
             }
