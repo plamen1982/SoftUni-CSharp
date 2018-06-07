@@ -53,8 +53,6 @@ namespace _2.AnonymousThreat
 
         static List<string> divideList(List<string> inputString, int startIndex, int numberOfParts)
         {
-            //int addedToTheLastElement = inputString[elementNumber].Length % numberOfParts;
-            //on which position we insert an element and where the current one is going
 
             string element = inputString[startIndex]; 
             int dividedPartsLength = element.Length / numberOfParts;
@@ -62,7 +60,7 @@ namespace _2.AnonymousThreat
 
             List<string> dividedString = new List<string>();
             string currentElement = "";
-            //element = "acasojhas"
+
             for (int i = 0; i < element.Length; i += dividedPartsLength)
             {
                 if (addedToTheLast == 0)
