@@ -7,7 +7,26 @@ namespace _6.FoldAndSum
     {
         static void Main(string[] args)
         {
+
+            //Solution with LINQ
+            int[] numbers = Console.ReadLine().Split(new char[] {' '}).Select(int.Parse).ToArray();
+            int k = numbers.Length / 4;
+
+            int[] leftArray = numbers.Take(k).Reverse().ToArray();
+            int[] middArray = numbers.Skip(k).Take(2 * k).ToArray();
+            int[] rightArray = numbers.Reverse().Take(k).ToArray();
+
+            int[] upperArray = leftArray.Concat(rightArray).ToArray();
+            int[] sumArray = new int[middArray.Length];
+
+            for (int i = 0; i < upperArray.Length; i++)
+            {
+                sumArray[i] = upperArray[i] + middArray[i];
+            }
+
+            Console.WriteLine(string.Join(" ", sumArray));
             //Solution with no LINQ
+            /*
             int[] numbers = Console.ReadLine().Split().Select(int.Parse).ToArray();
             int k = numbers.Length / 4;
 
@@ -15,6 +34,7 @@ namespace _6.FoldAndSum
             int[] rightArray = new int[k];
             int[] middArray = new int[2 * k];
             int[] sumArray = new int[2 * k];
+
             //left array
             for (int i = 0; i < k; i++)
             {
@@ -53,6 +73,7 @@ namespace _6.FoldAndSum
             }
 
             Console.WriteLine(string.Join(" ", sumArray));
+            */
         }
     }
 }
