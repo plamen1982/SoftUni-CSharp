@@ -12,11 +12,8 @@ namespace _6.FoldAndSum
             int[] numbers = Console.ReadLine().Split(new char[] {' '}).Select(int.Parse).ToArray();
             int k = numbers.Length / 4;
 
-            int[] leftArray = numbers.Take(k).Reverse().ToArray();
             int[] middArray = numbers.Skip(k).Take(2 * k).ToArray();
-            int[] rightArray = numbers.Reverse().Take(k).ToArray();
-
-            int[] upperArray = leftArray.Concat(rightArray).ToArray();
+            int[] upperArray = numbers.Take(k).Reverse().ToArray().Concat(numbers.Reverse().Take(k).ToArray()).ToArray();
             int[] sumArray = new int[middArray.Length];
 
             for (int i = 0; i < upperArray.Length; i++)

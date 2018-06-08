@@ -8,6 +8,7 @@ namespace _2.AnonymousThreat
     {
         static void Main(string[] args)
         {
+           
             List<string> inputElements = Console.ReadLine().Split(' ').ToList();
             
             while (true)
@@ -103,6 +104,8 @@ namespace _2.AnonymousThreat
             inputString.InsertRange(startIndex, dividedString);
 
             return inputString;
+       
+
         }
     }
 }
