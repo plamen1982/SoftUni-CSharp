@@ -15,7 +15,7 @@ namespace _2.OddOccurrences
             {
                 if (!countElements.ContainsKey(item))
                 {
-                    countElements.Add(item, 1);
+                    countElements[item] = 1;
                 }
                 else
                 {                   

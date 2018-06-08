@@ -16,7 +16,7 @@ namespace _1.AssociativeArrays
             {
                 if (foundedNumbersOccurance.ContainsKey(number))
                 {
-                    foundedNumbersOccurance[number]++;
+                    foundedNumbersOccurance[number] =  foundedNumbersOccurance[number] + 1;
                 }
                 else
                 {
