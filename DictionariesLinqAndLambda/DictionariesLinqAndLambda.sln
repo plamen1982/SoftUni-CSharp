@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.Phonebook", "1.Phonebook\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.PhonebookUpgrade", "2.PhonebookUpgrade\2.PhonebookUpgrade.csproj", "{F3A3EAA4-7883-4B99-9E9A-EA923A64E7D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.HandsOfCards", "5.HandsOfCards\5.HandsOfCards.csproj", "{6E742B37-41F0-41E0-B168-367145944887}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F3A3EAA4-7883-4B99-9E9A-EA923A64E7D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3A3EAA4-7883-4B99-9E9A-EA923A64E7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3A3EAA4-7883-4B99-9E9A-EA923A64E7D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E742B37-41F0-41E0-B168-367145944887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E742B37-41F0-41E0-B168-367145944887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E742B37-41F0-41E0-B168-367145944887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E742B37-41F0-41E0-B168-367145944887}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
