@@ -18,7 +18,7 @@ namespace _2.OddOccurrences
                     countElements.Add(item, 1);
                 }
                 else
-                {
+                {                   
                     countElements[item]++;
                 }
             }
@@ -26,14 +26,13 @@ namespace _2.OddOccurrences
             List<string> result = new List<string>();
             foreach (var item in countElements)
             {
-
                 if (item.Value % 2 != 0)
                 {
                     result.Add(item.Key);
                 }
             }
 
-            Console.WriteLine(string.Join(",", result));
+            Console.WriteLine(string.Join(", ", result));
         }
     }
 }
