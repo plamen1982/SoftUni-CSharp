@@ -11,8 +11,7 @@ namespace _5.HandsOfCards
             Dictionary<string, decimal> users = new Dictionary<string, decimal>();
             while (true)
             {
-                /*
-                 * */
+
                 string[] tokens = Console.ReadLine().Split(":,".ToCharArray()).Distinct().ToArray();
                 string name = tokens[0];
                 if (name == "JOKER")
