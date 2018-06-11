@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.PhonebookUpgrade", "2.Pho
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.HandsOfCards", "5.HandsOfCards\5.HandsOfCards.csproj", "{6E742B37-41F0-41E0-B168-367145944887}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.PopulationCounter", "7.PopulationCounter\7.PopulationCounter.csproj", "{C7EB6E3A-EFBB-4FA0-87F5-BD621EB433A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.PopulationCounter", "7.PopulationCounter\7.PopulationCounter.csproj", "{C7EB6E3A-EFBB-4FA0-87F5-BD621EB433A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.MinerTask", "3.MinerTask\3.MinerTask.csproj", "{247CD8CD-F59A-4EB4-952D-8B801B81F2BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{C7EB6E3A-EFBB-4FA0-87F5-BD621EB433A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7EB6E3A-EFBB-4FA0-87F5-BD621EB433A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7EB6E3A-EFBB-4FA0-87F5-BD621EB433A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{247CD8CD-F59A-4EB4-952D-8B801B81F2BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{247CD8CD-F59A-4EB4-952D-8B801B81F2BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{247CD8CD-F59A-4EB4-952D-8B801B81F2BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{247CD8CD-F59A-4EB4-952D-8B801B81F2BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
