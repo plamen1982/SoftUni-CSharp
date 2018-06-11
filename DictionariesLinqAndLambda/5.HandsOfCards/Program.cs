@@ -50,38 +50,28 @@ namespace _5.HandsOfCards
 
             foreach (var user in users)
             {
-                Dictionary<string, List<string>> distinctPlayers = new Dictionary<string, List<string>>();
-                distinctPlayers.Add(user.Key, user.Value.Distinct().ToList());
+                List<string> distinctCards = user.Value.Distinct().ToList();
 
                 int sum = 0;
 
-                foreach (var player in distinctPlayers)
+                foreach (var card in distinctCards)
                 {
-                    foreach (var card in player.Value)
-                    {
-                        string[] currentCard = ReturnCardsToCalculate(card);
-                        int typeCard = cards[currentCard[0]];
-                        int colorCard = cards[currentCard[1]];
+                    Dictionary<string, string> results = ReturnCardsToCalculate(card);
+                    string typeCard = results.First().Key;
+                    string typeColor = results.First().Value;
 
-                        sum += typeCard * colorCard;
-                        
-                    }
-
-                    Console.WriteLine($"{player.Key}: {sum}");
-                    sum = 0;
+                    sum += cards[typeCard] * cards[typeColor];
                 }
-
+                Console.WriteLine($"{user.Key}: {sum}");
+                sum = 0;
             }
-
-
-
         }
-        static string[] ReturnCardsToCalculate(string card)
+        static Dictionary<string, string> ReturnCardsToCalculate(string card)
         {
 
             string typeCard;
             string typeColor;
-            string[] result = new string[2];
+            Dictionary<string, string> result = new Dictionary<string, string>();
 
             if (card[0] == '1')
             {
@@ -95,8 +85,7 @@ namespace _5.HandsOfCards
             }
 
 
-            result[0] = typeCard;
-            result[1] = typeColor;
+            result[typeCard] = typeColor;
             return result;
         }
 
