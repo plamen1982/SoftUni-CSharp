@@ -11,9 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.HandsOfCards", "5.HandsOf
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.PopulationCounter", "7.PopulationCounter\7.PopulationCounter.csproj", "{C7EB6E3A-EFBB-4FA0-87F5-BD621EB433A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.MinerTask", "3.MinerTask\3.MinerTask.csproj", "{247CD8CD-F59A-4EB4-952D-8B801B81F2BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.MinerTask", "3.MinerTask\3.MinerTask.csproj", "{247CD8CD-F59A-4EB4-952D-8B801B81F2BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.FixEmails", "4.FixEmails\4.FixEmails.csproj", "{FF838F38-CAC1-434B-9FC1-FBAC45D1B452}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.FixEmails", "4.FixEmails\4.FixEmails.csproj", "{FF838F38-CAC1-434B-9FC1-FBAC45D1B452}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.DragonArmy", "11.DragonArmy\11.DragonArmy.csproj", "{908E41F1-BAA6-4D21-A047-2E2552F4BBB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{8F5E3421-2DB1-4286-BA5F-208689F688D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{FF838F38-CAC1-434B-9FC1-FBAC45D1B452}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF838F38-CAC1-434B-9FC1-FBAC45D1B452}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF838F38-CAC1-434B-9FC1-FBAC45D1B452}.Release|Any CPU.Build.0 = Release|Any CPU
+		{908E41F1-BAA6-4D21-A047-2E2552F4BBB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{908E41F1-BAA6-4D21-A047-2E2552F4BBB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{908E41F1-BAA6-4D21-A047-2E2552F4BBB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{908E41F1-BAA6-4D21-A047-2E2552F4BBB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F5E3421-2DB1-4286-BA5F-208689F688D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F5E3421-2DB1-4286-BA5F-208689F688D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F5E3421-2DB1-4286-BA5F-208689F688D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F5E3421-2DB1-4286-BA5F-208689F688D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
