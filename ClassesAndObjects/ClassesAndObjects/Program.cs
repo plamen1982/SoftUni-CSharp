@@ -46,7 +46,6 @@ namespace ClassesAndObjects
                 }
             }
             Console.WriteLine(countWorkDays);
-
         }
     }
 }
