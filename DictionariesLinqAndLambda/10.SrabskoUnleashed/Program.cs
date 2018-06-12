@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
+using System.Text.RegularExpressions;
 
 namespace _10.SrabskoUnleashed
 {
@@ -9,11 +10,17 @@ namespace _10.SrabskoUnleashed
     {
         static void Main(string[] args)
         {
-            Dictionary<string, Dictionary<string, BigInteger>> statisticsChalga = new Dictionary<string, Dictionary<string, BigInteger>>();
+            Dictionary<string, Dictionary<string, long>> statisticsChalga = new Dictionary<string, Dictionary<string, long>>();
+
+            string pattern = @"(\w+(?: \w+)*) @(\w+(?: \w+)*) (\d+) (\d+)";
+            Regex regex = new Regex(pattern);
 
             while (true)
             {
-                string[] inputData = Console.ReadLine().Split("@");
+                string inputInfo = Console.ReadLine();
+
+
+                string[] inputData = inputInfo.Split('@');
                 string singer = inputData[0];
 
                 if (singer == "End")
@@ -21,12 +28,14 @@ namespace _10.SrabskoUnleashed
                     break;
                 }
 
-                string[] placeAndMoney = inputData[1].Split();
-
-                if (placeAndMoney.Length < 3)
+                if (!regex.IsMatch(inputInfo))
                 {
                     continue;
                 }
+
+                string[] placeAndMoney = inputData[1].Split();
+
+
 
                 int moneyForTicket = int.Parse(placeAndMoney[placeAndMoney.Length - 2]);
                 int seats = int.Parse(placeAndMoney[placeAndMoney.Length - 1]);
@@ -34,12 +43,12 @@ namespace _10.SrabskoUnleashed
 
                 if (placeAndMoney.Length == 4)
                 {
-                    place = placeAndMoney[0] + " " + placeAndMoney[1];
+                    place = placeAndMoney[0] + ' ' + placeAndMoney[1];
                 }
 
                 else if (placeAndMoney.Length == 5)
                 {
-                    place = placeAndMoney[0] + " " + placeAndMoney[1] + " " + placeAndMoney[2];
+                    place = placeAndMoney[0] + ' ' + placeAndMoney[1] + ' ' + placeAndMoney[2];
                 }
 
 
@@ -49,7 +58,7 @@ namespace _10.SrabskoUnleashed
                 }
                 if (statisticsChalga.ContainsKey(place) == false)
                 {
-                    statisticsChalga[place] = new Dictionary<string, BigInteger>();
+                    statisticsChalga[place] = new Dictionary<string, long>();
 
                     if (statisticsChalga[place].ContainsKey(singer) == false)
                     {
