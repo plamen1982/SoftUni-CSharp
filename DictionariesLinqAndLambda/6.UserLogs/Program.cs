@@ -56,7 +56,7 @@ namespace _6.UserLogs
                 Console.WriteLine($"{userLog.Key}: ");
                 StringBuilder str = new StringBuilder();
                 //item = ["ipAdress" : 3]
-                foreach (var iPAdress in userLog.Value.OrderByDescending(x => x.Value))
+                foreach (var iPAdress in userLog.Value)
                 {
                     str.Append(iPAdress.Key).Append(" => ").Append(iPAdress.Value).Append(", ");
                 }
