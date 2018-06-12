@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace _11.DragonArmy
 {
@@ -15,7 +16,7 @@ namespace _11.DragonArmy
             //Red Bazgargal 100 2500 25
 
             int n = int.Parse(Console.ReadLine());
-            Dictionary<string, SortedDictionary<string, List<double>>> dragons = new Dictionary<string, SortedDictionary<string, List<double>>>();
+            Dictionary<string, Dictionary<string, List<double>>> dragons = new Dictionary<string, Dictionary<string, List<double>>>();
 
             while (n-- > 0)
             {
@@ -33,7 +34,7 @@ namespace _11.DragonArmy
 
                 if (dragons.ContainsKey(typeDragon) == false)
                 {
-                    dragons[typeDragon] = new SortedDictionary<string, List<double>>();
+                    dragons[typeDragon] = new Dictionary<string, List<double>>();
                     if (dragons[typeDragon].ContainsKey(nameDragon) == false)
                     {
                         dragons[typeDragon][nameDragon] = new List<double>();
@@ -65,7 +66,7 @@ namespace _11.DragonArmy
                 }
 
                 Console.WriteLine($"{dragon.Key}::({(averageDamage / dragon.Value.Count):F2}/{(averageHealth / dragon.Value.Count):F2}/{(averageArmor / dragon.Value.Count):F2})");
-                foreach (var nameDragon in dragon.Value)
+                foreach (var nameDragon in dragon.Value.OrderBy(x => x.Key).ToDictionary(x => x.Key, x => x.Value))
                 {
                     Console.WriteLine($"-{nameDragon.Key} -> damage: {nameDragon.Value[0]}, health: {nameDragon.Value[1]}, armor: {nameDragon.Value[2]}");
                 }

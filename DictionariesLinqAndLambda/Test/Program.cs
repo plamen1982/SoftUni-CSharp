@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Test
 {
@@ -17,6 +18,8 @@ namespace Test
             int armor = 30;
 
             List<int> stats = new List<int> { damage, health, armor };
+
+            
 
             string typeDragon = "Red";
             string nameDragon = "Bazgargal";
@@ -49,6 +52,15 @@ namespace Test
                     }
                 }
             }
+            List<int> nums = new List<int>();
+            nums.Add(3);
+            nums.Add(2);
+            nums.Add(1);
+            nums = nums
+              .OrderBy(num => num)
+              .ToList();
+            Console.WriteLine(string.Join(" ", nums));
+
         }
     }
 }
