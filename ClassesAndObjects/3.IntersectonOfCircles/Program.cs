@@ -33,4 +33,44 @@ namespace _3.IntersectonOfCircles
 
         }
     }
+
+    class Point
+    {
+        public double X { get; set; }
+        public double Y { get; set; }
+
+        public Point(double X, double Y)
+        {
+            this.X = X;
+            this.Y = Y;
+        }
+    }
+
+    class Circle
+    {
+        public Point Center { get; set; }
+        public double Radius { get; set; }
+
+        public Circle(Point p1, double Radius)
+        {
+            this.Center = p1;
+            this.Radius = Radius;
+        }
+
+        public static bool Intersect(Circle c1, Circle c2)
+        {
+            double distance = Math.Sqrt((c1.Center.X - c2.Center.X) * (c1.Center.X - c2.Center.X) + (c1.Center.X - c2.Center.X) * (c1.Center.Y - c2.Center.Y));
+
+            bool isIntersect;
+
+            if (c1.Radius + c2.Radius >= distance)
+            {
+                return isIntersect = true;
+            }
+            else
+            {
+                return isIntersect = false;
+            }
+        }
+    }
 }

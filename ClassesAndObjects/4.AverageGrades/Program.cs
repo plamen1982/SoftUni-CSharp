@@ -32,12 +32,14 @@ namespace _4.AverageGrades
             {
                 Console.WriteLine($"{student.Name} -> {student.Grades.Average():f2}");
             }
+            
         }
 
         class Student
         {
             public string Name { get; set; }
             public double[] Grades { get; set; }
+       
             public Student(string Name, double[] Grades)
             {
                 this.Name = Name;
