@@ -4,6 +4,39 @@ using System.Linq;
 
 namespace _5.BookLibrary
 {
+
+    public class Book
+    {
+        public Book(string title, string author, string publisher, DateTime realeaseDate, decimal iSBN, decimal price)
+        {
+            Title = title;
+            Author = author;
+            Publisher = publisher;
+            RealeaseDate = realeaseDate;
+            ISBN = iSBN;
+            Price = price;
+        }
+
+        public string Title { get; set; }
+        public string Author { get; set; }
+        public string Publisher { get; set; }
+        public DateTime RealeaseDate { get; set; }
+        public decimal ISBN { get; set; }
+        public decimal Price { get; set; }
+    }
+
+    public class Library
+    {
+        public string NameOfLibrary { get; set; }
+        public List<Book> ListOfBooks { get; set; }
+
+        public Library(string nameOfLibrary, List<Book> listOfBooks)
+        {
+            NameOfLibrary = nameOfLibrary;
+            ListOfBooks = listOfBooks;
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -45,38 +78,6 @@ namespace _5.BookLibrary
                 Console.WriteLine($"{item.Key} -> {item.Value:F2}");
             }
 
-        }
-    }
-
-    public class Book
-    {
-        public Book(string title, string author, string publisher, DateTime realeaseDate, decimal iSBN, decimal price)
-        {
-            Title = title;
-            Author = author;
-            Publisher = publisher;
-            RealeaseDate = realeaseDate;
-            ISBN = iSBN;
-            Price = price;
-        }
-
-        public string Title { get; set; }
-        public string Author { get; set; }
-        public string Publisher { get; set; }
-        public DateTime RealeaseDate { get; set; }
-        public decimal ISBN { get; set; }
-        public decimal Price { get; set; }
-    }
-
-    public class Library
-    {
-        public string NameOfLibrary { get; set; }
-        public List<Book> ListOfBooks { get; set; }
-
-        public Library(string nameOfLibrary, List<Book> listOfBooks)
-        {
-            NameOfLibrary = nameOfLibrary;
-            ListOfBooks = listOfBooks;
         }
     }
 }
