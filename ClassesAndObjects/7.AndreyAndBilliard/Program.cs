@@ -75,8 +75,6 @@ namespace _7.AndreyAndBilliard
                     {
                         customers.Add(customer);
                     }
-
-
                 }
             }
 
@@ -84,7 +82,7 @@ namespace _7.AndreyAndBilliard
             {
                 Console.WriteLine(customer.Name);
                 
-                foreach (var productAndQuantity in customer.ProductsAndQuantities.OrderBy(x => x.Value))
+                foreach (var productAndQuantity in customer.ProductsAndQuantities)
                 {
                     Console.WriteLine($"-- {productAndQuantity.Key} - {productAndQuantity.Value}");
                 }
