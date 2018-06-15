@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.CountSubstringOccurance",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.TextFilter", "3.TextFilter\3.TextFilter.csproj", "{206E2520-997A-49F5-91B1-C5031AB965E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.Palindromes", "4.Palindromes\4.Palindromes.csproj", "{4A8369D6-785D-4373-8666-EF60C92FCAC4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{206E2520-997A-49F5-91B1-C5031AB965E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{206E2520-997A-49F5-91B1-C5031AB965E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{206E2520-997A-49F5-91B1-C5031AB965E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A8369D6-785D-4373-8666-EF60C92FCAC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A8369D6-785D-4373-8666-EF60C92FCAC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A8369D6-785D-4373-8666-EF60C92FCAC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A8369D6-785D-4373-8666-EF60C92FCAC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
