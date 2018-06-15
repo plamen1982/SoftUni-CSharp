@@ -9,16 +9,24 @@ namespace _4.Palindromes
         static void Main(string[] args)
         {
             string[] text = Console.ReadLine().Split(",?!. ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
-            List<string> result = new List<string>();
+            List<string> palindromes = new List<string>();
 
+            //2nd Soluton
+            palindromes = text
+                .Where(IsPalindrome)
+                .OrderBy(x => x)
+                .Distinct()
+                .ToList();
+            /* 1st Solution
             foreach (var word in text)
             {
-                if (IsPalindrom(word))
+                if (IsPalindrome(word))
                 {
-                    result.Add(word);
+                    palindromes.Add(word);
                 }
             }
-            Console.WriteLine(string.Join(", " , result.Distinct().OrderBy(x => x)));
+            */
+            Console.WriteLine(string.Join(", " , palindromes.Distinct().OrderBy(x => x)));
         }
 
         static bool IsPalindrome(string word)
