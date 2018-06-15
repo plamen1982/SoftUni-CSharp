@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.AndreyAndBilliard", "7.AndreyAndBilliard\7.AndreyAndBilliard.csproj", "{127C7986-B895-4DEB-851F-76E45C96A538}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.MentorGroup", "8.MentorGroup\8.MentorGroup.csproj", "{7306AB6C-7B17-492D-B1AD-62536012EF25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8.MentorGroup", "8.MentorGroup\8.MentorGroup.csproj", "{7306AB6C-7B17-492D-B1AD-62536012EF25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.TeamworkProject", "9.TeamworkProject\9.TeamworkProject.csproj", "{98E77B6B-867E-49EB-BC33-31D558F9AE72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{7306AB6C-7B17-492D-B1AD-62536012EF25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7306AB6C-7B17-492D-B1AD-62536012EF25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7306AB6C-7B17-492D-B1AD-62536012EF25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98E77B6B-867E-49EB-BC33-31D558F9AE72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98E77B6B-867E-49EB-BC33-31D558F9AE72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98E77B6B-867E-49EB-BC33-31D558F9AE72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98E77B6B-867E-49EB-BC33-31D558F9AE72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
