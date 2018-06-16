@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _9.TeamworkProject
+namespace _9.TeamWorKProjects
 {
-    class Team
+ class Team
     {
         public Team(string owner, string teamName)
         {
@@ -33,50 +33,50 @@ namespace _9.TeamworkProject
             //
             for (int i = 0; i < n; i++)
             {
-                string[] inputTeams = Console.ReadLine().Split('-');
-                string owner = inputTeams[0];
-                string teamName = inputTeams[1];
+                var split = Console.ReadLine().Split('-');
+                string creator = split[0];
+                string name = split[1];
 
 
-                if (teams.Any(t => t.TeamName == teamName))
+                if (teams.Any(t => t.TeamName == name))
                 {
-                    Console.WriteLine($"Team { teamName} was already created!");
+                    Console.WriteLine($"Team { name} was already created!");
                     continue;
                 }
                 //
-                if (teams.Any(t => t.Owner == owner))
+                if (teams.Any(t => t.Owner == creator))
                 {
-                    Console.WriteLine($"{owner} cannot create another team!");
+                    Console.WriteLine($"{creator} cannot create another team!");
                     continue;
                 }
 
-                teams.Add(new Team(owner, teamName));
-                Console.WriteLine($"Team {teamName} has been created by {owner}!");
+                Console.WriteLine($"Team {name} has been created by {creator}!");
+                teams.Add(new Team(creator, name));
             }
             //
-            string line;
-            while ((line = Console.ReadLine()) != "end of assignment")
+            string input;
+            while ((input = Console.ReadLine()) != "end of assignment")
             {
-                string[] inputMembers = line.Split(new[] { '-', '>' },
+                string[] inputMembers = input.Split(new[] { '-', '>' },
                     StringSplitOptions.RemoveEmptyEntries);
-                string member = inputMembers[0];
-                string teamName = inputMembers[1];
+                string user = inputMembers[0];
+                string name = inputMembers[1];
 
-                var currentTeam = teams.FirstOrDefault(t => t.TeamName == teamName);
+                var currentTeam = teams.FirstOrDefault(t => t.TeamName == name);
 
                 if (currentTeam == null)
                 {
-                    Console.WriteLine($"Team {teamName} does not exist!");
+                    Console.WriteLine($"Team {name} does not exist!");
                     continue;
                 }
 
-                if (teams.Any(team => team.Owner == member || team.TeamMembers.Contains(member)))
+                if (teams.Any(t => t.Owner == user || t.TeamMembers.Contains(user)))
                 {
-                    Console.WriteLine($"Member {member} cannot join team {teamName}!");
+                    Console.WriteLine($"Member {user} cannot join team {name}!");
                     continue;
                 }
 
-                currentTeam.TeamMembers.Add(member);
+                currentTeam.TeamMembers.Add(user);
 
             }
 
@@ -94,12 +94,16 @@ namespace _9.TeamworkProject
             }
             Console.WriteLine("Teams to disband:");
 
-            foreach (var team in teams.Where(t => t
-                        .TeamMembers.Count == 0)
+            foreach (var team in teams
+                        .Where(t => t.TeamMembers.Count == 0)
+                        .Select(t => t.TeamName)
                         .OrderBy(x => x))
             {
-                Console.WriteLine(team.TeamName);
+                Console.WriteLine(team);
             }
         }
     }
 }
+
+
+
