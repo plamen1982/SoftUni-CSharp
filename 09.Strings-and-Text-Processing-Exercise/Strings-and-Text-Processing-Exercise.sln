@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.MagicExchangeableWords", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.ConvertFromBase10ToBaseN.cs", "1.ConvertFromBase10ToBaseN.cs\1.ConvertFromBase10ToBaseN.cs.csproj", "{301963EF-8D65-430A-94F7-4C30F1ABC49A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.ConsoleApp1ConvertFromBase10ToBaseN", "2.ConsoleApp1ConvertFromBase10ToBaseN\2.ConsoleApp1ConvertFromBase10ToBaseN.csproj", "{9C6B8556-2414-4ABC-A4BB-2A443CB0DA55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{301963EF-8D65-430A-94F7-4C30F1ABC49A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{301963EF-8D65-430A-94F7-4C30F1ABC49A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{301963EF-8D65-430A-94F7-4C30F1ABC49A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C6B8556-2414-4ABC-A4BB-2A443CB0DA55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C6B8556-2414-4ABC-A4BB-2A443CB0DA55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C6B8556-2414-4ABC-A4BB-2A443CB0DA55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C6B8556-2414-4ABC-A4BB-2A443CB0DA55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
