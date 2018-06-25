@@ -42,31 +42,33 @@ namespace _2.AnonymousThreat
             {
                 startIndex = 0;
             }
+                        if (startIndex > dataList.Count)
+            {
+                startIndex = dataList.Count - 1;
+            }
 
+            int elementsToConnect = endIndex - startIndex + 1;
             StringBuilder mergedResult = new StringBuilder();
             //0            1    
             //IvoJohnyTonyBony Mony merge 5 100
+            if (elementsToConnect > dataList.Count)
+            {
+                return;
+            }
 
-
-            if (startIndex >= dataList.Count)
+            if (startIndex > dataList.Count)
             {
                 startIndex = dataList.Count - 2;
                 endIndex = dataList.Count - 1; 
 
             }
-
-            int elementsToConnect = endIndex - startIndex + 1;
-
             if (endIndex > dataList.Count)
             {
                 endIndex = endIndex - startIndex;
                 elementsToConnect = endIndex - startIndex + 1;
             }
 
-            if (elementsToConnect > dataList.Count)
-            {
-                return;
-            }
+
 
             for (int i = startIndex; i <= endIndex; i++)
             {    //merge 4 10, ads adf jd jk ui fd fs
@@ -87,7 +89,7 @@ namespace _2.AnonymousThreat
             {
                 startIndex = 0;
             }
-            if (startIndex >= dataList.Count)
+            if (startIndex > dataList.Count)
             {
                 startIndex = dataList.Count - 1;
             }

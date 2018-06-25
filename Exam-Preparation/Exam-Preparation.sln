@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.AnonymousThreat", "2.Anon
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", "{DB23C93B-33C8-4AF8-A36B-AF39DD88B312}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.Snowballs-5Jan218Part1", "1.Snowballs-5Jan218Part1\1.Snowballs-5Jan218Part1.csproj", "{2FAAFC47-DCA1-4124-86B1-2C3C1D36253C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.Snowballs-5Jan218Part1", "1.Snowballs-5Jan218Part1\1.Snowballs-5Jan218Part1.csproj", "{2FAAFC47-DCA1-4124-86B1-2C3C1D36253C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.Snowmen", "2.Snowmen\2.Snowmen.csproj", "{AA78E764-FC9D-4174-AF69-E3E3FBA67B3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.Snowmen", "2.Snowmen\2.Snowmen.csproj", "{AA78E764-FC9D-4174-AF69-E3E3FBA67B3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.CommandInterpreter", "2.CommandInterpreter\2.CommandInterpreter.csproj", "{8D95B5CD-DCDE-46E6-BF9C-10C76F9E4BD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{AA78E764-FC9D-4174-AF69-E3E3FBA67B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA78E764-FC9D-4174-AF69-E3E3FBA67B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA78E764-FC9D-4174-AF69-E3E3FBA67B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D95B5CD-DCDE-46E6-BF9C-10C76F9E4BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D95B5CD-DCDE-46E6-BF9C-10C76F9E4BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D95B5CD-DCDE-46E6-BF9C-10C76F9E4BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D95B5CD-DCDE-46E6-BF9C-10C76F9E4BD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
