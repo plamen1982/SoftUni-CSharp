@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.Snowmen", "2.Snowmen\2.Sn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.CommandInterpreter", "2.CommandInterpreter\2.CommandInterpreter.csproj", "{8D95B5CD-DCDE-46E6-BF9C-10C76F9E4BD3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.RageQuit", "3.RageQuit\3.RageQuit.csproj", "{143BC24B-E2F3-4AAF-A914-9DAEA4A5AAC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{8D95B5CD-DCDE-46E6-BF9C-10C76F9E4BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D95B5CD-DCDE-46E6-BF9C-10C76F9E4BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D95B5CD-DCDE-46E6-BF9C-10C76F9E4BD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{143BC24B-E2F3-4AAF-A914-9DAEA4A5AAC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{143BC24B-E2F3-4AAF-A914-9DAEA4A5AAC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{143BC24B-E2F3-4AAF-A914-9DAEA4A5AAC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{143BC24B-E2F3-4AAF-A914-9DAEA4A5AAC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
