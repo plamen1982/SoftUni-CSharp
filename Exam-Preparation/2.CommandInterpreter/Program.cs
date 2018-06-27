@@ -1,5 +1,4 @@
-﻿/*
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -7,150 +6,116 @@ namespace _2.CommandInterpreter
 {
     class Program
     {
-        static List<string> ReternRangedList(int startIndex, int endIndex, List<string> inputList)
-        {
-            List<string> RangedList = new List<string>();
-
-            for (int i = startIndex; i < startIndex + endIndex; i++)
-            {
-                RangedList.Add(inputList[i]);
-            }
-            return RangedList;
-        }
-
-        static List<string> ReternRollRightList(int count, List<string> inputList)
-        {
-
-            for (int i = 0; i < count; i++)
-            {
-
-                string temp = inputList[inputList.Count - 1];
-                inputList.Insert(0, temp);
-                inputList.RemoveAt(inputList.Count - 1);
-            }
-            return inputList;
-        }
-
-        static List<string> ReternRollLeftList(int count, List<string> inputList)
-        {
-
-            for (int i = 0; i < count; i++)
-            {
-
-                string temp = inputList[0];
-                inputList.Add(temp);
-                inputList.RemoveAt(0);
-            }
-            return inputList;
-        }
-
-        static bool CheckIndexes(int startIndex, int count, List<string> inputList)
-        {
-            bool isValidIndex = true;
-            if (startIndex < 0 || startIndex >= inputList.Count || count < 0 || count >= inputList.Count || startIndex + count >= inputList.Count)
-            {
-                isValidIndex = false;
-                return isValidIndex;
-            }
-
-            return isValidIndex;
-        }
-
-        static bool CheckIndexes(int count, List<string> inputList)
-        {
-            bool isValidIndex = true;
-            if (count >= inputList.Count || count < 0)
-            {
-                isValidIndex = false;
-                return isValidIndex;
-            }
-
-            return isValidIndex;
-        }
-
-        private static void PrintResult(List<string> inputList)
+        private static void Print(List<string> inputList)
         {
             Console.WriteLine("Invalid input parameters.");
-            Console.WriteLine("[" + string.Join(", ", inputList) + "]");
+            Console.Write($"[{string.Join(", ", inputList)}]");
+        }
+        static bool IsIndexValid(int startIndex, int count, List<string> inputList)
+        {
+            bool isValid = true;
+            if (startIndex < 0 || startIndex >= inputList.Count || count < 0 || count >= inputList.Count || (startIndex + count) >= inputList.Count)
+            {
+                isValid = false;
+            }
+            return isValid;
+        }
+
+        static bool IsIndexValid(int count, List<string> inputList)
+        {
+            bool isValid = true;
+            if (count < 0 || count >= inputList.Count)
+            {
+                isValid = false;
+            }
+            return isValid;
         }
 
         static void Main(string[] args)
         {
-
+            
             List<string> inputList = Console.ReadLine().Split().ToList();
             string line = string.Empty;
 
             while ((line = Console.ReadLine()) != "end")
             {
-                string[] tokens = line.Split(" ", StringSplitOptions.RemoveEmptyEntries).ToArray();
+                string[] tokens = line.Split(" ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries).ToArray();
 
                 string command = tokens[0];
                 if (command == "reverse")
                 {
                     int startIndex = int.Parse(tokens[2]);
                     int count = int.Parse(tokens[4]);
-                    if (CheckIndexes(startIndex, count, inputList))
+
+                    if (IsIndexValid(startIndex, count, inputList))
                     {
-                        List<string> revesedElements = ReternRangedList(startIndex, count, inputList);
-                        revesedElements.Reverse();
-                        inputList.RemoveRange(startIndex, count);
-                        inputList.InsertRange(startIndex, revesedElements);
+                        inputList.Reverse(startIndex, count);
                     }
                     else
                     {
-                        PrintResult(inputList);
+                        Print(inputList);
                     }
-
                 }
 
                 if (command == "sort")
                 {
                     int startIndex = int.Parse(tokens[2]);
                     int count = int.Parse(tokens[4]);
-                    if (CheckIndexes(startIndex, count, inputList))
+
+                    if (IsIndexValid(startIndex, count, inputList))
                     {
-                        List<string> sortedElements = ReternRangedList(startIndex, count, inputList);
-                        sortedElements.Sort();
-                        inputList.RemoveRange(startIndex, count);
-                        inputList.InsertRange(startIndex, sortedElements);
+                        
                     }
                     else
                     {
-                        PrintResult(inputList);
+                        Print(inputList);
                     }
                 }
 
                 if (command == "rollLeft")
                 {
                     int count = int.Parse(tokens[1]);
-                    if (CheckIndexes(count, inputList))
+
+                    if (IsIndexValid(count, inputList))
                     {
-                        ReternRollLeftList(count, inputList);
+                        for (int i = 0; i < count; i++)
+                        {
+                            // 1 2 3 -> 1 2 3 1
+                            inputList.Add(inputList[0]);
+                            inputList.RemoveAt(0);
+                        }
                     }
                     else
                     {
-                        PrintResult(inputList);
+                        Print(inputList);
                     }
+
                 }
 
                 if (command == "rollRight")
                 {
                     int count = int.Parse(tokens[1]);
-                    if (CheckIndexes(count, inputList))
+
+                    if (IsIndexValid(count, inputList))
                     {
-                        ReternRollRightList(count, inputList);
+                        // 1 2 3 -> 3 1 2 3 
+                        for (int i = 0; i < count; i++)
+                        {
+                            inputList.Insert(0, inputList[inputList.Count - 1]);
+                            inputList.RemoveAt(inputList.Count - 1);
+                        }
                     }
                     else
                     {
-                        PrintResult(inputList);
+                        Print(inputList);
                     }
                 }
-
             }
         }
     }
 }
-*/
+
+/*
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -163,7 +128,7 @@ namespace Command_Interpreter
     {
         static void Main(string[] args)
         {
-            var dataToChange = Console.ReadLine().Split(new char[] { ' '},StringSplitOptions.RemoveEmptyEntries).ToList();
+            var dataToChange = Console.ReadLine().Split(new char[] {' '},StringSplitOptions.RemoveEmptyEntries).ToList();
             List<string> theNewStr = new List<string>();
  
             string input = Console.ReadLine();
@@ -239,3 +204,4 @@ namespace Command_Interpreter
         }
     }
 }
+*/

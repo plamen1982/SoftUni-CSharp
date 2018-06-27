@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Numerics;
 
 namespace _1.Snowballs_5Jan218Part1
 {
@@ -7,37 +8,26 @@ namespace _1.Snowballs_5Jan218Part1
     {
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
-            Dictionary<string, double> bestSnowball = new Dictionary<string, double>();
-            bestSnowball["snowballSnow"] = 0.0;
-            bestSnowball["snowballTime"] = 0.0;
-            bestSnowball["snowballQuality"] = 0.0;
-            bestSnowball["maxSnowBallValue"] = 0.0;
-            double maxSnowValue = double.MinValue;
-
-            for (int i = 0; i < n; i++)
+            int numberSnowBalls = int.Parse(Console.ReadLine());
+            long maxSnowballSnow = long.MinValue;
+            long maxSnowballTime = long.MinValue;
+            long maxSnowballQuality = long.MinValue;
+            BigInteger maxSnowballValue = BigInteger.MinusOne;
+            for (int i = 0; i < numberSnowBalls; i++)
             {
-                double snowballSnow = double.Parse(Console.ReadLine());
-                double snowballTime = double.Parse(Console.ReadLine());
-                double snowballQuality = double.Parse(Console.ReadLine());
-                double currentValue = snowballValue(snowballSnow, snowballTime, snowballQuality);
-                if (maxSnowValue < currentValue)
+                long snowballSnow = long.Parse(Console.ReadLine());
+                long snowballTime = long.Parse(Console.ReadLine());
+                int snowballQuality = int.Parse(Console.ReadLine());
+                BigInteger snowballValue = BigInteger.Pow((snowballSnow / snowballTime),  snowballQuality);
+                if (maxSnowballValue < snowballValue)
                 {
-                    maxSnowValue = currentValue;
-                    bestSnowball["snowballSnow"] = snowballSnow;
-                    bestSnowball["snowballTime"] = snowballTime;
-                    bestSnowball["snowballQuality"] = snowballQuality;
-                    bestSnowball["maxSnowBallValue"] = maxSnowValue;
+                    maxSnowballSnow = snowballSnow;
+                    maxSnowballTime = snowballTime;
+                    maxSnowballQuality = snowballQuality;
+                    maxSnowballValue = snowballValue;
                 }
             }
-
-            Console.WriteLine($"{bestSnowball["snowballSnow"]:f0} : {bestSnowball["snowballTime"]:f0} = {bestSnowball["maxSnowBallValue"]:f0} ({bestSnowball["snowballQuality"]:f0})");
-        }
-
-        static double snowballValue(double snowballSnow, double snowballTime, double snowballQuality)
-        {
-            double result = Math.Pow((snowballSnow / snowballTime), snowballQuality);
-            return result;
+            Console.WriteLine($"{ maxSnowballSnow} : { maxSnowballTime} = { maxSnowballValue} ({ maxSnowballQuality})");
         }
     }
 }

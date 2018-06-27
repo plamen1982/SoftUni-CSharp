@@ -10,16 +10,15 @@ namespace Files
         {
             int n = int.Parse(Console.ReadLine());
 
-          
             Dictionary<string, Dictionary<string, long>> rootsExtentionsAndSizes = new Dictionary<string, Dictionary<string, long>>();
             while (n-- > 0)
             {
                 //Windows\Temp\win.exe;5423 - test
-                string[] line = Console.ReadLine().Split("\\");
+                string[] line = Console.ReadLine().Split(new char[] { '\\' });
                 string root = line[0];
                 string fileNameAndSize= line[line.Length - 1];
-                string fileName = fileNameAndSize.Split(";")[0];
-                long size = long.Parse(fileNameAndSize.Split(";")[1]);
+                string fileName = fileNameAndSize.Split(new char[] { ';'})[0];
+                long size = long.Parse(fileNameAndSize.Split(new char[] { ';'})[1]);
 
                 //does not exist
                 if (rootsExtentionsAndSizes.ContainsKey(root) == false)
@@ -47,7 +46,7 @@ namespace Files
                 }
             }
 
-            string[] output = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
+            string[] output = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             string extentionOutput = output[0];
             string rootOutput = output[2];
             bool isExist = false;

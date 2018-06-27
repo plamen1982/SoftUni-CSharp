@@ -66,8 +66,14 @@ namespace Test
                 }
             }
 
-            List<string> someStr = new List<string> { "List1Element", "List1Element" };
-            someStr.fo
+            List<string> someStr = new List<string> { "1", "2", "3" };
+            List<string> newResult = someStr.Skip(1).Take(2).ToList();
+            
+
+            foreach (var item in newResult)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
