@@ -45,11 +45,14 @@ namespace _4.Snowwhite
 
             //Print: You must order the dwarfs by physics in descending order - ok and then ---- by total count of dwarfs with the same hat color in descending order. 
             //Then you must print them all.  •	The output format is: ({hatColor}) {name} <-> {physics}
-
-            // [color: [{name: 20},{name: 40}]]
-            foreach (var color in dwarfs.OrderByDescending(x => x.Value.Values.Max()).ThenByDescending(x => x.Value.Values.Count()))
+            // [green: [
+            //{ pesho: 300}, 
+            //{ gosho: 50}, 
+            //{ mimi: 70}]]
+            // [red: [{pesho: 300}, {gosho: 50}]]
+            foreach (var color in dwarfs.OrderByDescending(x => x.Value.Values.Max()).ThenByDescending(x => x.Value.Count()))
             {
-                foreach (var dwarf  in color.Value.OrderByDescending(x => x.Key))
+                foreach (var dwarf  in color.Value.OrderByDescending(x => x.Value))
                 {
                     Console.Write($"({color.Key}) ");
                     Console.WriteLine($"{dwarf.Key} <-> {dwarf.Value}");
