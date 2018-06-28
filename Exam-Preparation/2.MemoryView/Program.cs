@@ -12,10 +12,10 @@ namespace _2.MemoryView
         {
             string line = string.Empty;
             //Console.WriteLine($"{(char)(80)}{(char)(101)}{(char)(115)}{(char)(104)}{(char)(111)}");
-            string theWholeString = string.Empty;
+            StringBuilder theWholeString = new StringBuilder();
             while ((line = Console.ReadLine()) != "Visual Studio crash")
             {
-                theWholeString +=" " + line;
+                theWholeString.Append(" " + line);
             }
             
                 //you will be receiving lines from the memory view in 2 - byte integer unsigned display.Each line consists of exactly 22 integers, 
@@ -25,7 +25,7 @@ namespace _2.MemoryView
                 Regex rgx = new Regex(patternNumberDigits);
                 List<string> allNumbers = theWholeString.ToString().Split().ToList();
 
-                foreach (Match item in rgx.Matches(theWholeString))
+                foreach (Match item in rgx.Matches(theWholeString.ToString()))
                 {
                     string numberDigits = item.Groups[2].ToString();
                     string fullMatch = item.Groups[0].ToString();
@@ -40,6 +40,7 @@ namespace _2.MemoryView
                     {
                         allNumbers.RemoveRange(0, 22);
                     }
+
                     PrintTheResult(result);
                 result.Clear();
                 }

@@ -14,7 +14,7 @@ namespace _2.AnonymousThreat
             //Divide method - test
             //Result method - test
 
-            List<string> dataList = Console.ReadLine().Split().ToList();
+            List<string> words = Console.ReadLine().Split().ToList();
             string input = string.Empty;
             while ((input = Console.ReadLine()) != "3:1")
             {
@@ -24,75 +24,48 @@ namespace _2.AnonymousThreat
                 {
                     int startIndex = int.Parse(tokens[1]);
                     int endIndex = int.Parse(tokens[2]);
-                    Merge(dataList, startIndex, endIndex);
+                    startIndex = changeIndex(startIndex, words.Count);
+                    endIndex = changeIndex(endIndex, words.Count);
+                    Merge(words, startIndex, endIndex);
                 }
                 else if (command == "divide")
                 {
                     int startIndex = int.Parse(tokens[1]);
                     int partitions = int.Parse(tokens[2]);
-                    Divide(dataList, startIndex, partitions);
+                    Divide(words, startIndex, partitions);
                 }
             }
-            Console.WriteLine(string.Join(" ", dataList));
+            Console.WriteLine(string.Join(" ", words));
+        }
+        static int changeIndex(int index, int wordsLength)
+        {
+            if (index < 0)
+            {
+                index = 0;
+            }
+            if (index >= wordsLength)
+            {
+                index = wordsLength - 1;
+            }
+            return index;
         }
 
-        static void Merge(List<string> dataList, int startIndex, int endIndex)
+        static void Merge(List<string> words, int startIndex, int endIndex)
         {
-            if (startIndex < 0)
-            {
-                startIndex = 0;
-            }
-                        if (startIndex > dataList.Count)
-            {
-                startIndex = dataList.Count - 1;
-            }
-
-            int elementsToConnect = endIndex - startIndex + 1;
-            StringBuilder mergedResult = new StringBuilder();
-            //0            1    
-            //IvoJohnyTonyBony Mony merge 5 100
-            if (elementsToConnect > dataList.Count)
-            {
-                return;
-            }
-
-            if (startIndex > dataList.Count)
-            {
-                startIndex = dataList.Count - 2;
-                endIndex = dataList.Count - 1; 
-
-            }
-            if (endIndex > dataList.Count)
-            {
-                endIndex = endIndex - startIndex;
-                elementsToConnect = endIndex - startIndex + 1;
-            }
-
-
-
+            string concatWord = string.Empty;
             for (int i = startIndex; i <= endIndex; i++)
-            {    //merge 4 10, ads adf jd jk ui fd fs
-                //if dataList.Count = 2, startIndex = 3, endIndex = 4 => if start > count, startIndex = startIndex - dataList.Count + 1
-
-                mergedResult.Append(dataList[i]);
+            {    
+                concatWord += words[i];
             }
-            dataList.RemoveRange(startIndex, elementsToConnect);
-            dataList.Insert(startIndex, mergedResult.ToString());
-
+            words.RemoveRange(startIndex, endIndex - startIndex + 1);
+            words.Insert(startIndex, concatWord);
         }
 
         static void Divide(List<string> dataList, int startIndex, int partitions)
         {
             // 0    1    2    3      4
             //abcd efgh ijkl mnop qrstuvwxyza, divide 4 5 => qr st uv wx yza
-            if (startIndex < 0)
-            {
-                startIndex = 0;
-            }
-            if (startIndex > dataList.Count)
-            {
-                startIndex = dataList.Count - 1;
-            }
+
             string elementToDivide = dataList[startIndex];
             int lengtPartitions = dataList[startIndex].Length / partitions;
 
