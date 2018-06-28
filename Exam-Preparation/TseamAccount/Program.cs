@@ -21,7 +21,7 @@ namespace TseamAccount
             while ((line = Console.ReadLine()) != "Play!")
             {
                 count++;
-                string[] tokens = line.Split();
+                string[] tokens = line.Split(" ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
                 //The first line is the account
                 if (count == 1)
                 {
