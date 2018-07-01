@@ -9,10 +9,6 @@ namespace _2.AnonymousThreat
     {
         static void Main(string[] args)
         {
-            //Input - test - OK
-            //Merge method - test1 - OK, test2 - OK, test3 - OK, test4 - OK
-            //Divide method - test
-            //Result method - test
 
             List<string> words = Console.ReadLine().Split().ToList();
             string input = string.Empty;

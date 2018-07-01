@@ -75,7 +75,6 @@ namespace _2.CommandInterpreter
                 if (command == "rollLeft")
                 {
                     int count = int.Parse(tokens[1]);
-
                     if (IsIndexValid(count, inputList))
                     {
                         for (int i = 0; i < count; i++)
@@ -89,7 +88,6 @@ namespace _2.CommandInterpreter
                     {
                         Print(inputList);
                     }
-
                 }
 
                 if (command == "rollRight")

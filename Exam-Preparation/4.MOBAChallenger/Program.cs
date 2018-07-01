@@ -16,7 +16,7 @@ namespace _4.MOBAChallenger
 
             while ((line = Console.ReadLine()) != "Season end")
             {
-                string[] tokens = line.Split(" ".ToCharArray());
+                string[] tokens = line.Split(" ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
                 if (tokens.Length == 5)
                 {
                     //The player and position are strings, the given skill will be an integer number. You need to keep track of every player. - TEST - OK

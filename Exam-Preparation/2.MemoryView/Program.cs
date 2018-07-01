@@ -11,16 +11,13 @@ namespace _2.MemoryView
         static void Main(string[] args)
         {
             string line = string.Empty;
-            //Console.WriteLine($"{(char)(80)}{(char)(101)}{(char)(115)}{(char)(104)}{(char)(111)}");
+
             StringBuilder theWholeString = new StringBuilder();
             while ((line = Console.ReadLine()) != "Visual Studio crash")
             {
                 theWholeString.Append(" " + line);
             }
             
-                //you will be receiving lines from the memory view in 2 - byte integer unsigned display.Each line consists of exactly 22 integers, 
-                //separated by whitespace.You should find every string in the whole input and print them on the console.
-                //Every string starts with -> "32656 19759 32763"
                 string patternNumberDigits = @"(32656\s19759\s32763\s0\s(\d)\s0\s)+";
                 Regex rgx = new Regex(patternNumberDigits);
                 List<string> allNumbers = theWholeString.ToString().Split().ToList();
@@ -40,9 +37,8 @@ namespace _2.MemoryView
                     {
                         allNumbers.RemoveRange(0, 22);
                     }
-
                     PrintTheResult(result);
-                result.Clear();
+                    result.Clear();
                 }
         }
 

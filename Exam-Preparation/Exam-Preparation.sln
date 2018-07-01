@@ -19,27 +19,37 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.RageQuit", "3.RageQuit\3.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.Files", "Files\3.Files.csproj", "{65539B55-9AC7-4308-AAA9-111145B29DB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.Snowflake", "03.Snowflake\3.Snowflake.csproj", "{CAB13CF3-AD6E-4E28-85D6-CCF5775D0AE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.Snowflake", "03.Snowflake\3.Snowflake.csproj", "{CAB13CF3-AD6E-4E28-85D6-CCF5775D0AE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.Snowwhite", "4.Snowwhite\4.Snowwhite.csproj", "{4D1EA46D-24A9-45CE-A83F-A73D6A3497D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.Snowwhite", "4.Snowwhite\4.Snowwhite.csproj", "{4D1EA46D-24A9-45CE-A83F-A73D6A3497D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.MOBAChallenger", "4.MOBAChallenger\4.MOBAChallenger.csproj", "{87EE7D3B-E44B-4FC3-A6A8-761C9901C32B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.MOBAChallenger", "4.MOBAChallenger\4.MOBAChallenger.csproj", "{87EE7D3B-E44B-4FC3-A6A8-761C9901C32B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.TseamAccount", "TseamAccount\3.TseamAccount.csproj", "{D1284F18-1896-414B-A2EE-370349C20E14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.TseamAccount", "TseamAccount\3.TseamAccount.csproj", "{D1284F18-1896-414B-A2EE-370349C20E14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.RageExpenses", "01.RageExpenses\1.RageExpenses.csproj", "{9B961CDD-8941-4CD4-B2D8-5C1AFC4D556B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.RageExpenses", "01.RageExpenses\1.RageExpenses.csproj", "{9B961CDD-8941-4CD4-B2D8-5C1AFC4D556B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.MemoryView", "2.MemoryView\2.MemoryView.csproj", "{91F3A3EF-C972-4B67-B1EC-500761747B41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.MemoryView", "2.MemoryView\2.MemoryView.csproj", "{91F3A3EF-C972-4B67-B1EC-500761747B41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.AnonymousVox", "3.AnonymousVox\3.AnonymousVox.csproj", "{99904A81-9C45-418F-B7AD-5521564DEEA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.AnonymousVox", "3.AnonymousVox\3.AnonymousVox.csproj", "{99904A81-9C45-418F-B7AD-5521564DEEA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.AnonymousCache", "4.AnonymousCache\4.AnonymousCache.csproj", "{756DF424-5D02-44A9-AA6A-D8BD3B8C858B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.AnonymousCache", "4.AnonymousCache\4.AnonymousCache.csproj", "{756DF424-5D02-44A9-AA6A-D8BD3B8C858B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.PadawanEquipment", "1.PadawanEquipment\1.PadawanEquipment.csproj", "{A71B5818-17E5-46AE-949B-CC3FC4AF6DB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.PadawanEquipment", "1.PadawanEquipment\1.PadawanEquipment.csproj", "{A71B5818-17E5-46AE-949B-CC3FC4AF6DB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.KaminoFactory", "2.KaminoFactory\2.KaminoFactory.csproj", "{7EAFA0A9-20CF-42EE-A019-3C46A9060BD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.KaminoFactory", "2.KaminoFactory\2.KaminoFactory.csproj", "{7EAFA0A9-20CF-42EE-A019-3C46A9060BD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.HornetAssault", "3.HornetAssault\3.HornetAssault.csproj", "{3AAA040A-78D0-4A45-8C3D-63C088EAEAB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.HornetAssault", "3.HornetAssault\3.HornetAssault.csproj", "{3AAA040A-78D0-4A45-8C3D-63C088EAEAB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftUni-Reception", "SoftUni-Reception\SoftUni-Reception.csproj", "{5E44E580-9FDB-4F4D-BCB1-01B491A9965A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftUniCoursePlanning", "SoftUniCoursePlanning\SoftUniCoursePlanning.csproj", "{36532C97-1C4B-47EE-A000-592BD01BCCE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftUniBarIncome", "SoftUniBarIncome\SoftUniBarIncome.csproj", "{F195F0FC-4145-4F85-8A98-42D86477A85E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftUniExamResults", "SoftUniExamResults\SoftUniExamResults.csproj", "{C03C1E35-2BE3-49E7-A878-7953F5BD2083}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondVariant", "SecondVariant\SecondVariant.csproj", "{BC52CD6F-2754-48D2-9A1E-EDBE2A9CA000}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +133,26 @@ Global
 		{3AAA040A-78D0-4A45-8C3D-63C088EAEAB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AAA040A-78D0-4A45-8C3D-63C088EAEAB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AAA040A-78D0-4A45-8C3D-63C088EAEAB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E44E580-9FDB-4F4D-BCB1-01B491A9965A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E44E580-9FDB-4F4D-BCB1-01B491A9965A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E44E580-9FDB-4F4D-BCB1-01B491A9965A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E44E580-9FDB-4F4D-BCB1-01B491A9965A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36532C97-1C4B-47EE-A000-592BD01BCCE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36532C97-1C4B-47EE-A000-592BD01BCCE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36532C97-1C4B-47EE-A000-592BD01BCCE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36532C97-1C4B-47EE-A000-592BD01BCCE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F195F0FC-4145-4F85-8A98-42D86477A85E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F195F0FC-4145-4F85-8A98-42D86477A85E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F195F0FC-4145-4F85-8A98-42D86477A85E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F195F0FC-4145-4F85-8A98-42D86477A85E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C03C1E35-2BE3-49E7-A878-7953F5BD2083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C03C1E35-2BE3-49E7-A878-7953F5BD2083}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C03C1E35-2BE3-49E7-A878-7953F5BD2083}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C03C1E35-2BE3-49E7-A878-7953F5BD2083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC52CD6F-2754-48D2-9A1E-EDBE2A9CA000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC52CD6F-2754-48D2-9A1E-EDBE2A9CA000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC52CD6F-2754-48D2-9A1E-EDBE2A9CA000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC52CD6F-2754-48D2-9A1E-EDBE2A9CA000}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -47,7 +47,6 @@ namespace _3.HornetAssault
                         break;
                     }
                 }
-
             }
             if (beehives.Sum() > 0)
             {

@@ -1,7 +1,10 @@
-﻿using System;
+﻿//partedno
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Test
 {
@@ -10,70 +13,116 @@ namespace Test
         static void Main(string[] args)
         {
 
-            string[] windows = { "Windows", "Windows", "Windows", "Games", "Games", "OtherGames", "OtherGames" };
-            string games = "Games";
-            List<string> fileName1 = new List<string> { "keygen.exe", "wow.exe", "keygen.exe", "wow.exe", "keygen.exe" };
-            List<long> size1 = new List<long> { 1024, 2056, 4128, 8256, 16512 };
+            List<string> names = new List<string>() { "Paul", "Rachel", "Simon", "Bentley", "Angel", "Junior", "Poulinio", "Maradona" };
+            List<string> friends = new List<string>() { "Peter", "Ralitsa", "Stephan", "Boqna", "Andon", "Julian", "Plamen", "George" };
+            List<int> money = new List<int>() { 205, 240, 280, 260, 250, 430, 305, 300 };
+            Console.WriteLine(string.Join(",", money.OrderByDescending(x => x)));
+            List<int> age = new List<int>() { 22, 33, 44, 55, 66, 77, 88, 99 };
+            int length = Math.Min(friends.Count, money.Count);
+            Dictionary<string, int> namesAndAges = new Dictionary<string, int>();
+            Dictionary<string, Dictionary<string, int>> namesAndFriends = new Dictionary<string, Dictionary<string, int>>();
 
-            Dictionary<string, Dictionary<string, long>> filesNamesAndSizes = new Dictionary<string, Dictionary<string, long>>();
-            // windows = new Dict()
-            //{windows : {kyegen.exe, 1024, wow.exe, 2056}}
-            for (int i = 0; i < 5; i++)
+            int count = 0;
+            int count1 = 1;
+            foreach (var name in names)
             {
-                // Check if windows exist, 
-                if (filesNamesAndSizes.ContainsKey(windows[i]) == false)
+                namesAndAges[name] = age[count];
+                count++;
+
+                for (int i = 0; i < length; i++)
                 {
-                    //create Dict, and add key, value to this new dict with key windows
-                    filesNamesAndSizes[windows[i]] = new Dictionary<string, long>();
-                    if (filesNamesAndSizes[windows[i]].ContainsKey(fileName1[i]) == false)
+                    if (namesAndFriends.ContainsKey(name) == false)
                     {
-                        //if key for the inner dict does not exist create new pair key, value
-                        filesNamesAndSizes[windows[i]].Add(fileName1[i], size1[i]);
+                        namesAndFriends[name] = new Dictionary<string, int>();
 
+                        if (namesAndFriends[name].ContainsKey(friends[i]) == false)
+                        {
+                            namesAndFriends[name].Add(friends[i], (money[i] + count1++));
+                        }
+                        else
+                        {
+                            namesAndFriends[name][friends[i]] += (money[i] + count1++);
+                        }
                     }
-
                     else
-                    {   // if the key for the inner dict exist, override the value, or if you want accumulate it with +=
-                        filesNamesAndSizes[windows[i]][fileName1[i]] = size1[i];
+                    {
+                        if (namesAndFriends[name].ContainsKey(friends[i]) == false)
+                        {
+
+                            namesAndFriends[name].Add(friends[i], (money[i] + count1++));
+                        }
+                        else
+                        {
+                            namesAndFriends[name][friends[i]] += (money[i] + count1++);
+
+                        }
                     }
+                }
+            }
+
+            foreach (var item in namesAndAges.OrderByDescending(x => x.Value))
+            {
+                Console.WriteLine($"{item.Key} {item.Value}");
+            }
+
+            foreach (var name in namesAndFriends.OrderByDescending(x => x.Value.Values.Min()))
+            {
+                Console.WriteLine($"{name.Key} is {namesAndAges[name.Key]} old");
+                foreach (var friendsNameAndAge in name.Value)
+                {
+                    Console.WriteLine($"\t{friendsNameAndAge.Key} : {friendsNameAndAge.Value}");
+                }
+            }
+
+            string worldCupStars = "Maradona 99 Poulinio 88 Junior 77 Angel 66 Bentley 55 Simon 44 Rachel 33 Paul 22";
+            string patter = @"(?<name>[A-Z][a-z]+)+\s(?<age>\d+)+";
+            Regex rgx = new Regex(patter);
+            Dictionary<string, int> theStarts = new Dictionary<string, int>();
+            MatchCollection namesAndAgesOfStarts = rgx.Matches(worldCupStars);
+            foreach (Match nameAndAge in namesAndAgesOfStarts)
+            {
+                theStarts.Add(nameAndAge.Groups["name"].Value, int.Parse(nameAndAge.Groups["age"].Value));
+            }
+            Console.WriteLine("The start from the World Cup Dictionary are:");
+            foreach (var item in theStarts)
+            {
+                Console.WriteLine($"Name: {item.Key}, Age: {item.Value}");
+            }
+
+            string text = "plamen___hristov";
+            string textToPlacehoder = "antonov";
+            int myNumber = 3;
+            string pattern = $@"([A-Za-z]+)(?<placeholder>[^A-Za-z0-9]{{{myNumber}}})([A-Za-z])";
+            Regex rgx1 = new Regex(pattern);
+
+            Match theMatch = rgx.Match(text);
+            int count2 = 0;
+            string firstName = theMatch.Groups[1].ToString();
+            string lastName = theMatch.Groups[2].ToString();
+            firstName = FirstLetterToUpper(firstName);
+            lastName = FirstLetterToUpper(lastName);
+            textToPlacehoder = FirstLetterToUpper(textToPlacehoder);
+            Console.WriteLine(theMatch.Groups["placeholder"].Value);
+            
+        }
+
+        static string FirstLetterToUpper(string str)
+        {
+            string result = string.Empty;
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (i == 0)
+                {
+                    result += str[i].ToString().ToUpper();
                 }
                 else
                 {
-                    // if exist, check if there is a key existing agains windows key in the other dictionary,
-                    if (filesNamesAndSizes[windows[i]].ContainsKey(fileName1[i]) == false)
-                    {
-                        //if does not exist, create such a such a key, with size
-                        filesNamesAndSizes[windows[i]].Add(fileName1[i], size1[i]);
-                    }
-
-                    else
-                    {
-                        //if it not exist add the value to this key, 
-                        filesNamesAndSizes[windows[i]][fileName1[i]] += size1[i];
-                        //or delete the existing value with a new one
-                        //filesNamesAndSizes[windows[i]][fileName1[i]] = size1[i];
-                    }
-
+                    result += str[i];
                 }
             }
+            return result;
 
-
-            foreach (var folder in filesNamesAndSizes.Values)
-            {
-                foreach (var fileNameAndSize in folder.OrderByDescending(x => x.Value).ThenBy(x => x.Key))
-                {
-                    Console.WriteLine($"{fileNameAndSize.Key} - {fileNameAndSize.Value} KB");
-                }
-            }
-
-            List<string> someStr = new List<string> { "1", "2", "3" };
-            List<string> newResult = someStr.Skip(1).Take(2).ToList();
-            
-
-            foreach (var item in newResult)
-            {
-                Console.WriteLine(item);
-            }
         }
     }
 }
+
